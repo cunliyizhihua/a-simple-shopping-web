@@ -1,0 +1,20 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title><%= htmlWebpackPlugin.options.title%></title>
+    </head>
+    <body>
+    <%= require('html-loader!./layout/nav.html') %>
+    <%= require('html-loader!./layout/header.html') %>
+    <div class="crub"></div>
+
+    <div class="detail-con">
+        <div class="w" id="detail-wrap">
+            
+        </div>
+    </div>
+
+    <%= require('html-loader!./layout/footer.html') %>   
+    </body>
+</html>

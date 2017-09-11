@@ -1,0 +1,28 @@
+<!-- 地址列表 -->
+<p class="title">选择收货地址</p>
+<div class="list">
+	{{#list}}
+    <a class="item address-list-con" data-id="{{id}}">
+        <div class="item-title">
+            <span class="city">{{receiverProvince}}{{receiverCity}}</span>
+            <span class="name">{{receiverName}}</span>
+        </div>
+        <div class="item-content">
+            <span>{{receiverAddress}}</span>
+            <span>{{receiverPhone}}</span>
+        </div>
+        <div class="item-opera">
+            <span class="edit link">编辑</span>
+            <span class="del link">删除</span>
+        </div>
+    </a>
+    {{/list}}
+    <a class="item" id="address-add">
+        <div class="icon">
+            <i class="fa fa-plus" aria-hidden="true"></i>
+        </div>
+        <p class="add-new">
+            使用新地址
+        </p>
+    </a>
+</div>

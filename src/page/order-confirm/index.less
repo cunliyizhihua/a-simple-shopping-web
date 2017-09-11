@@ -1,0 +1,235 @@
+.confirm-con{
+	background-color: #fff;
+	padding: 20px 0;
+	.address{
+		border-bottom: 1px solid #ccc;
+		.title{
+			height: 25px;
+		    line-height: 25px;
+		    color: #333;
+		    font-weight: 700;
+		    font-size: 14px;
+		    margin-bottom: 15px;
+		};
+		.list{
+			.item{
+				float: left;
+				width: 224px;
+				height: 95px;
+				padding: 5px 10px;
+				margin: 0 10px 20px 10px;
+				border: 3px dashed #ccc;
+				background-color: #fffeec;
+				&.active{
+					border: 3px dashed red;
+				}
+				.item-title{
+					height: 20px;
+					line-height: 20px;
+					border-bottom: 1px solid #eee;
+				};
+				.item-content{
+					padding-top: 7px;
+					height: 50px;
+					overflow: hidden;
+				};
+				.item-opera{
+					visibility: hidden;
+					span{
+						margin-right: 5px;
+					}
+				};
+				&:hover{
+					.item-opera{
+						visibility: visible;
+					};
+				}
+			};
+			#address-add{
+				text-align: center;
+				.icon{
+					.fa-plus{
+						font-size: 70px;
+						color: #9bccff;
+					}
+				};
+				.add-new{
+					font-size: 16px;
+					color: #9bccff;
+				}
+			}
+		}
+	};
+	.product-list{
+		margin-top: 20px;
+		.title{
+			height: 25px;
+		    line-height: 25px;
+		    color: #333;
+		    font-weight: 700;
+		    font-size: 14px;
+		    margin-bottom: 15px;
+		};
+		.p-head{
+			height: 38px;
+		    line-height: 38px;
+		    background-color: #f9f9f9;
+			li{
+				float: left;
+				text-align: center;
+			};
+			.info{
+				width: 380px;
+				text-align: left;
+				padding-left: 100px;
+			};
+			.price{
+				width: 200px;
+			};
+			.count{
+				width: 200px;				
+			};
+			.cal{
+				width: 200px;
+			}
+		};
+		.p-body{
+			text-align: center;
+			border-collapse: collapse;
+			margin: 5px 0;
+			.simple{
+				height: 80px;
+				background-color: #fdf3f3;
+				border-bottom: 2px solid #fff;
+				.info{
+					width: 480px;
+					text-align: left;
+					.product{
+						position: relative;
+						.tu{
+							display: inline-block;
+							margin-left: 15px;
+							width: 60px;
+							height: 60px;
+							background-color: green;
+							img{
+								width: 100%
+							}
+						};
+						.title{
+							position: absolute;
+				    		top:10px;
+				    		left: 95px;
+				    		width: 245px;
+				    		overflow: hidden;
+				    		height: 40px;
+				    		line-height: 20px;
+				    		font-weight: normal;
+				    		color: #333;
+						}
+					}
+				};
+				.price{
+					width: 200px;
+				};
+				.count{
+					width: 200px;				
+				};
+				.cal{
+					width: 200px;
+				}
+			}
+		};
+		.p-foot{
+			background-color: #f3f3f3;
+			height: 48px;
+			line-height: 48px;
+			.total{
+				float: right;
+				padding: 0 15px;
+				font-size: 15px;
+			};
+			.submit-btn{
+				float: right;
+				width: 160px;
+				background-color: #f10180;
+				color: #fff;
+				font-size: 18px;
+				font-weight: 700;
+				text-align: center;
+				cursor: pointer;
+			}
+		}
+	};
+}
+
+.address-modal{
+	position: fixed;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 20;
+	background-color: rgba(0, 0, 0, 0.5);
+	.edit{
+		position: relative;
+		background-color: #fff;
+		width: 650px;
+		padding: 10px 20px;
+		margin: 80px auto;
+		.close{
+			position: absolute;
+			top: 0;
+			right: 2px;
+			i{
+				font-size: 25px;
+				color: #ff0000;
+			};
+		};
+		.title{
+			font-size: 18px;
+			color: #333;
+			border-bottom: 1px solid #eee;
+			margin-bottom: 10px;
+		};
+		.item{
+			margin-bottom: 8px;
+			label{
+				font-size: 14px;
+			};
+			.error{
+				padding-left: 10px;
+				color: red;
+			};
+			input{
+				display: inline-block;
+				height: 30px;
+				width: 260px;
+				padding: 0 10px;
+				overflow: hidden;
+			};
+			.edit-picker{
+				display: inline-block;
+				select{
+					vertical-align: middle;
+					display: inline-block;
+					height: 30px;
+					width: 140px;
+					margin-right: 1.5px;
+				}
+			};
+			.sub-btn{
+				display: inline-block;
+				margin-top: 10px;
+				font-size: 16px;
+				padding: 10px;
+				background-color: #f10180;
+				cursor: pointer;
+				font-weight: 700;
+				color: #fff;
+			}
+		}
+	}
+}

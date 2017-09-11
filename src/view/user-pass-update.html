@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" id="user-center-html">
+<head>
+	<meta charset="UTF-8">
+	<title><%= htmlWebpackPlugin.options.title%></title>
+</head>
+<body>
+	<%= require('html-loader!./layout/nav.html') %>
+	<%= require('html-loader!./layout/header.html') %>
+	
+	<div class="crubline"></div>
+	<div class="userinfo-container">
+		<div class="w">
+		<!-- 左侧 --> 
+		<%= require('html-loader!./layout/nav-side.html') %>
+		<!-- 右侧 -->
+		<div class="user-info">
+			<h3 class="title">修改密码</h3>
+			<form class="info-list" id="update-pass">
+				<div class="item">
+					<label for="oldpass">原始密码:</label>
+					<input type="password" name="oldpass" id="oldpass" class="content">
+				</div>
+				<div class="item">
+					<label for="newpass">新的密码:</label>
+					<input type="password" name="newpass" id="newpass" class="content">
+				</div>
+				<div class="item">
+					<label for="confirm">确认密码:</label>
+					<input type="password" name="confirm" id="confirm" class="content">
+				</div>
+				<div class="item">
+					<!-- 点击更新个人信息 -->
+					<input type="button" class="updatepassword" value="提交">
+				</div>
+			</form>
+		</div>
+	</div>
+	</div>
+
+
+	<!-- 引入footer -->
+	<%= require('html-loader!./layout/footer.html') %>
+</body>
+</html>

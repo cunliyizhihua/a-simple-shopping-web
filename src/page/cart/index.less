@@ -1,0 +1,149 @@
+.cart-con{
+	padding: 20px 0;
+	background-color: #fff;
+	.cart-head{
+		.head-con{
+		    border: 1px solid #e0e0e0;
+		    height: 38px;
+		    line-height: 38px;
+		    background-color: #f9f9f9;
+		    li{
+		    	display: inline-block;
+		    	text-align: center;
+		    };
+		    .all{
+		    	text-align: left;
+		    	width: 90px;
+		    	padding-left: 10px;
+		    	.checkit{
+		    		vertical-align: middle;
+		    	}
+		    };
+		    .info{
+		    	text-align: left;
+		    	width: 430px;
+		    };
+		    .price{
+		    	width: 150px;
+		    }
+		    .count{
+		    	width: 150px;
+		    }
+		    .cal{
+		    	width: 150px;
+		    }
+		    .do{
+		    	width: 60px;
+		    }
+		}
+	};
+	.cart-body{
+		border: 1px solid #e0e0e0;
+		padding-bottom: 20px;
+		table{
+			width: 1040px;
+			margin-left: auto;
+			margin-right: auto;
+			padding: 10px 0;
+			margin-top: 15px;
+			background-color: #fff8f8;
+			tbody{
+				tr{
+					.all{
+				    	width: 80px;
+				    	.checkit{
+				    		vertical-align: middle;
+				    		margin-left: 10px;
+				    	}
+				    };
+				    .info{
+				    	width: 435px;
+				    	position: relative;
+				    	.tu{
+				    		display: inline-block;
+				    		width: 58px;
+				    		height: 58px;
+				    		img{
+				    			vertical-align: top;
+				    			width: 100%;
+				    		}
+				    	};
+				    	.title{
+				    		position: absolute;
+				    		top:20px;
+				    		left: 70px;
+				    		width: 245px;
+				    		overflow: hidden;
+				    		height: 40px;
+				    		line-height: 20px;
+				    		font-weight: normal;
+				    		color: #333;
+				    	}
+				    };
+				    .price{
+				    	width: 150px;
+				    	text-align: center;
+				    }
+				    .count{
+				    	width: 150px;
+				    	text-align: center;
+				    	.btn{
+				    		width: 23px;
+				    		height: 22px;
+				    		border: 1px solid #aba4a4;
+				    		display: inline-block;
+				    		cursor: pointer;
+				    		// 下面那个是css3属性
+				    		user-select : none;
+				    	};
+				    	.num{
+				    		width: 32px;
+				    	}
+				    }
+				    .cal{
+				    	text-align: center;
+				    	width: 150px;
+				    };
+				    .do{
+				    	text-align: center;
+				    	width: 60px;
+				    	font-size: 16px;
+				    	cursor: pointer;
+				    }
+				}
+			}
+		}
+	};
+	.cart-foot{
+		background-color: #f3f3f3;
+		height: 48px;
+		line-height: 48px;
+		margin-top: 20px;
+		.foot-con{
+			li{
+				float: left;
+			};
+			.all{
+				padding: 0 20px 0 20px;
+				.checkit{
+					vertical-align: middle;
+				}
+			};
+			.price{
+				float: right;
+				padding: 0 15px;
+				font-size: 15px;
+			};
+			.balance{
+				float: right;
+				width: 160px;
+				background-color: #f10180;
+				color: #fff;
+				font-size: 18px;
+				font-weight: 700;
+				text-align: center;
+				cursor: pointer;
+			}
+		}
+	}
+}

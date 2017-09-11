@@ -1,0 +1,220 @@
+/*
+* @Author: p
+* @Date:   2017-07-19 13:29:00
+* @Last Modified by:   p
+* @Last Modified time: 2017-07-20 14:10:29
+*/
+
+/*顶部导航*/
+.navbar{
+	background: #ccc;
+	.bar-item{
+		float: left;
+	    padding: 0 16px;
+	    line-height: 37px;
+	    text-align: left;
+	    a{
+	    	position: relative;
+		    display: block;
+		    text-decoration: none;
+		    font-size: 15px;
+		    color: #323334;
+		    &:hover{
+		    	color: #23ac38;
+		    };
+	    }
+	};
+	.first-bar-item{
+		width: 186px;
+		background: #000;
+		font-size: 15px;
+		span{
+			color: #fff;
+			i{
+				color: #ccc;
+				margin: 0 5px 0 10px;
+			}
+		}
+	}
+
+}
+
+/*左侧导航*/
+.keywords-list{	
+	float: left;
+	width: 210px;
+	background: rgba(255,255,255,.8);
+	position: relative;
+	.keywords-item{
+		height: 55px;
+		line-height: 55px;
+		font-size: 0;
+		border-bottom: 1px solid rgba(255,255,255,0.12);
+		&.mousehover{
+			background: #fff;
+		}
+		.icon{
+			text-align: center;
+			font-size: 26px;
+			width: 26px;
+			height: 26px;
+			padding-left: 20px;
+			color:#ccc;
+			vertical-align: top;
+			margin-top: 15px;
+		};
+		.words{
+			font-size: 14px;
+			padding-left: 20px;
+		};
+		.left-sub-list{
+			display: none;
+			padding: 24px 0;
+		    background: #fff;
+		    left: 210px;
+		    top: 0;
+		    overflow: hidden;
+		    position: absolute;
+		    z-index: 100;
+		    width: 870px;
+		    min-height: 400px;
+		    font-size: 14px;
+		    .level{
+			    margin-bottom: 13px;
+    			overflow: hidden;
+		    	dt{
+		    	    float: left;
+				    margin-top: 2px;
+				    width: 100px;
+				    line-height: 16px;
+				    text-align: right;
+			    };
+			    dd{
+				    margin-left: 130px;
+				    border-bottom: 1px dashed #e0e0e0;
+				    display: block;
+				    line-height: 16px;
+				    padding-bottom: 13px;
+				    a{
+				    	padding-left: 15px;
+				    }
+			    };
+		    }
+		    
+		}
+	}	
+}
+
+/*轮播图*/
+.banner-con{
+	float: right;
+	width: 860px;
+	height: 392px;
+	.unslider-arrow{
+	    position: absolute; 
+	    top:160px;
+	    width: 30px;
+	    height: 50px;
+	    line-height: 50px;
+	    text-align: center;
+	    font-size: 30px;
+	    color: #fff;
+	    background: #ccc;
+	    background: rgba(0,0,0,.2);
+	    cursor: pointer;
+	    &:hover{
+	    	background: #aaa;
+   			background: rgba(0,0,0,.5);
+	    }
+	};
+	.unslider-arrow.prev{
+	    left: 0;
+	};
+	.unslider-arrow.next{
+	    right: 0;
+	}
+}
+
+/*楼层*/
+.floor{
+	padding-top: 20px;
+	.floor-title{
+		background: url(./image/st.png) repeat-x 0 18px;
+		height: 35px;
+		text-align: center;
+		h2{
+			display: inline;
+		    padding: 0 50px;
+		    background-color: #f6f6f6;
+		    font-weight: 400;
+		    font-size: 26px;
+		    color: #333;
+		}
+	};
+	.floor-list{
+		.floor-item{
+			float: left;
+			width: 200px;
+			height: 220px;
+			margin: 15px 20px 15px 0;
+			position: relative;
+			a{
+				display: block;
+				width: 100%;
+				height: 100%;
+				background: #fff;
+				.floor-img{
+					position: absolute;
+					top: 10px;
+					right: 15px;
+					width: 80%;
+					height: 75%;
+				}
+				.floor-text{
+					position: absolute;
+					bottom: 0;
+					height: 36px;
+					line-height: 36px;
+					width: 200px;
+					text-align: center;
+					font-size: 16px;
+					background: #ddeffd
+				}
+			}
+		}
+		.floor-item-last{
+			margin-right: 0;
+		}
+
+	}
+}
+
+.menu{
+	display: none;
+	.menu-wrap{
+		position: fixed;
+		left: 50px;
+		top: 100px;
+		width: 40px;
+		li{
+			display: block;
+		    margin-top: -1px;
+		    border: 1px solid #ddd;
+		    cursor: pointer;
+		    overflow: hidden;
+	    	a{
+	    		display: block;
+	    		padding: 5px;
+			    line-height: 14px;
+			    font-size: 12px;
+			    text-align: center;
+			    color: #000;
+			    &.current{
+					background: #c2ece5;
+				}
+	    	}
+	    	
+		}
+		
+	}
+}

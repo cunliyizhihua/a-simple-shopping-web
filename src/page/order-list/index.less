@@ -1,0 +1,108 @@
+.order-lsit-container{
+	background-color: #fbfbfb;
+	.list-info{
+		background-color: #fff;
+		width: 860px;
+		min-height: 300px;
+		float: right;
+		padding: 0 10px;
+		.head-title{
+			margin: 10px 0;
+			width: 100%;
+			height: 38px;
+			line-height: 38px;
+			font-size: 14px;
+			font-weight: 500;
+			border-bottom: 1px solid #ccc;
+			p{
+				padding-left: 10px;
+			};
+		}
+		.table-header{
+			background-color: #8e8e8e;
+			width: 100%;
+			margin-bottom: 10px;
+			thead{
+				margin: 10px 0;
+				th{
+					padding: 5px 0;
+				}
+				.space{
+					width: 10%;
+				};
+				.info{
+					width: 45%;
+					text-align: left;
+				};
+				.price{
+					width: 15%;
+				};
+				.count{
+					width: 15%;
+				};
+				.cal{
+					width: 15%;
+				}
+			}
+		};
+		.table-content{
+			border-collapse: collapse;
+			margin-bottom: 10px;
+			tbody{
+				background-color: #fff;
+				.sel-head{
+					height: 25px;
+					line-height: 25px;
+					background-color: #ece7e7;
+					span{
+						padding: 10px;
+						#check-detail{
+							float: right;
+							padding-right: 5px;
+						}
+					}
+				};
+				.sel-body{
+					width: 100%;
+					background-color: #ffe0e0;
+					border-bottom: 2px solid #fff;
+					.sel-image{
+						width: 15%;
+						a{
+							display: inline-block;
+							width: 80px;
+							height: 80px;
+							margin: 10px;
+							background-color: red;
+							img{
+								width: 100%;
+								vertical-align: top;
+							}
+						}
+					};
+					.sel-title{
+						width: 40%;
+					};
+					.sel-price{
+						width: 15%;
+						text-align: center;
+					};
+					.sel-count{
+						width: 15%;
+						text-align: center;
+					};
+					.sel-cal{
+						width: 15%;
+						text-align: center;
+					}
+				}
+			}
+		};
+		.fenye{
+			text-align: center;
+			#order-list-page-con{
+				display: inline-block;
+			}
+		}
+	}
+}

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title><%= htmlWebpackPlugin.options.title%></title>
+    </head>
+    <body>
+        <%= require('html-loader!./layout/nav.html')  %>
+        <%= require('html-loader!./layout/header.html')  %>
+        <!-- 分割线 -->
+        <div class="crub"></div>
+        <!-- 内容区 -->
+        <div class="order-detail-con">
+            <div class="w order-detail">
+                
+            </div>
+        </div>
+
+        <%= require('html-loader!./layout/footer.html')  %>
+    </body>
+</html>

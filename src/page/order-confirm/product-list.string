@@ -1,0 +1,31 @@
+<!-- 商品列表 -->
+<p class="title">确认订单信息</p>
+<ul class="p-head clearfix">
+    <li class="info">商品信息</li>
+    <li class="price">价格</li>
+    <li class="count">数量</li>
+    <li class="cal">小计</li>
+</ul>
+<table class="p-body">
+    <tbody>
+    	{{#orderItemVoList}}
+        <tr class="simple">
+            <td class="info">
+                <div class="product">
+                    <a class="tu" href="./detail.html?productId={{productId}}">
+                        <img src="{{imageHost}}{{productImage}}" alt="{{productName}}">
+                    </a>
+                    <h3 class="title">{{productName}}</h3>
+                </div>
+            </td>
+            <td class="price">{{currentUnitPrice}}</td>
+            <td class="count">{{quantity}}</td>
+            <td class="cal">{{totalPrice}}</td>
+        </tr>
+        {{/orderItemVoList}}
+    </tbody>
+</table>
+<div class="p-foot">
+    <a class="submit-btn" id="sub-order">提交订单</a>
+    <span class="total">合计:{{productTotalPrice}}</span>                    
+</div>

@@ -1,0 +1,100 @@
+.login-wrap{
+    position: relative;
+    height: 475px;
+    z-index: 5;
+	#login-form{
+		position: relative;
+		top:40px;
+	    z-index: 4;
+	    background: #fff;
+	    overflow: visible;
+	    width: 304px;
+	    height: 330px;
+	    float:right;
+	    padding: 20px;
+	    .title{
+	    	font-weight: 700;
+    		color: #e4393c;
+    		font-size: 16px;
+    		padding-bottom: 10px;
+    		border-bottom: 1px solid #ccc;
+	    };
+	    .error-tip{
+			width: 100%;
+			height: 20px;
+			margin: 5px 0;
+			overflow: hidden;
+			color: red;
+			.error{
+				display: block;
+			}
+	    };
+	    .item{
+	    	position: relative;
+	    	border: 1px solid #eee;
+	    	margin-bottom: 20px;
+	    	.item-icon{
+    		    position: absolute;
+			    z-index: 3;
+			    top: 0;
+			    left: 0;
+			    width: 38px;
+			    height: 38px;
+			    border-right: 1px solid #bdbdbd;
+	    		text-align: center;
+	    		background: #ccc;
+	    		i{
+	    			font-size: 25px;
+	    			line-height: 38px;
+	    			color: green;
+	    		}
+	    	};
+	    	.item-content{
+    		        line-height: 18px;
+				    height: 18px;
+				    border: 0;
+				    padding: 10px 0 10px 50px;
+				    width: 252px;
+				    overflow: hidden;
+				    font-size: 14px;
+				    font-family: '\5b8b\4f53';
+				    outline: none;
+	    	};
+	    };
+	    .submit{
+	    	padding-top: 30px;
+	    	.submit-button{
+				    border: 1px solid #e85356;
+				    display: block;
+				    width: 100%;
+				    background: #e4393c;
+				    height: 35px;
+				    line-height: 35px;
+				    color: #fff;
+				    font-size: 20px;
+				    font-family: 'Microsoft YaHei';
+	    	}
+	    };
+	    .to-log-reg{
+	    	width: 100%;
+			text-align: right;
+			margin-top: 20px;
+	    	.to-log{
+	    		margin-right: 30px;
+	    	}
+	    	
+	    }
+	}
+	.login-banner{
+		position: absolute;
+		left: 0;
+		top: 0;
+	    width: 100%;
+	    height: 475px;
+	    background: #e93854;
+	    .tu{
+	    	height: 475px;
+	    	background: url(./image/loginBanner.png)
+	    }
+	}
+}

@@ -1,0 +1,27 @@
+<h3 class="title">我的信息</h3>
+<div class="info-list">
+	<div class="item">
+		<span>用户名:</span>
+		<span>{{username}}</span>
+	</div>
+	<div class="item">
+		<span>电　话:</span>
+		<span>{{phone}}</span>
+	</div>
+	<div class="item">
+		<span>邮　箱:</span>
+		<span>{{email}}</span>
+	</div>
+	<div class="item">
+		<span>问　题:</span>
+		<span>{{question}}</span>
+	</div>
+	<div class="item">
+		<span>答　案:</span>
+		<span>{{answer}}</span>
+	</div>
+	<div class="item">
+		<!-- 点击更新个人信息 -->
+		<a href="./user-center-update.html" class="editinfo">编辑个人信息</a>
+	</div>
+</div>

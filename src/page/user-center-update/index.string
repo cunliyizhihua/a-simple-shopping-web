@@ -1,0 +1,27 @@
+<h3 class="title">我的信息</h3>
+<form class="info-list" id="update-form">
+	<div class="item">
+		<label>用户名:</label>
+		<label>{{username}}</label>
+	</div>
+	<div class="item">
+		<label for="name">电　话:</label>
+		<input type="text" name="phone" value="{{phone}}" id="phone" class="content">
+	</div>
+	<div class="item">
+		<label for="email">邮　箱:</label>
+		<input type="text" name="email" value="{{email}}" id="email" class="content">
+	</div>
+	<div class="item">
+		<label for="question">问　题:</label>
+		<input type="text" name="question" value="{{question}}" id="question" class="content">
+	</div>
+	<div class="item">
+		<label for="answer">答　案:</label>
+		<input type="text" name="answer" value="{{answer}}" id="answer " class="content">
+	</div>
+	<div class="item">
+		<!-- 点击更新个人信息 -->
+		<input type="button" class="updateinfo" value="提交">
+	</div>
+</form>

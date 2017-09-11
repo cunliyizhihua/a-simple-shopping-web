@@ -1,0 +1,32 @@
+<form class="edit" id="edit-form add-form">
+    <div class="close">
+        <i class="fa fa-window-close" aria-hidden="true"></i>
+    </div>
+    <p class="title">添加地址</p>
+    <div class="item">
+        <label for="username">用　户:</label>
+        <input type="text" name="username" id="username" placeholder="请输入用户名">
+    </div>
+    <div class="item">
+        <label for="provice-city">城 市:</label>
+        <div id="distpick" class="edit-picker">
+          <select id="prov-sel"></select>
+          <select id="city-sel"></select>
+        </div>
+    </div>
+    <div class="item">
+        <label for="address">地 址:</label>
+        <input type="text" name="address" id="address" placeholder="请输入您的地址">
+    </div>
+    <div class="item">
+        <label for="mobile">手　机:</label>
+        <input type="text" name="mobile" id="mobile" placeholder="请输入手机号">
+    </div>
+    <div class="item">
+        <label for="code">邮　编:</label>
+        <input type="text" name="code" id="code" placeholder="请输入手机号">
+    </div>
+    <div class="item">
+        <a class="sub-btn">保存收货地址</a>
+    </div>
+</form>

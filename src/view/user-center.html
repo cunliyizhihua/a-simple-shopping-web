@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title><%= htmlWebpackPlugin.options.title%></title>
+</head>
+<body>
+	<%= require('html-loader!./layout/nav.html') %>
+	<%= require('html-loader!./layout/header.html') %>
+	
+	<div class="crubline"></div>
+	<div class="userinfo-container">
+		<div class="w">
+			<!-- 左侧 -->
+			<%= require('html-loader!./layout/nav-side.html') %>
+			<!-- 右侧 -->
+			<div class="user-info">
+				<!-- js渲染 -->
+			</div>
+		</div>
+	</div>
+
+
+	<!-- 引入footer -->
+	<%= require('html-loader!./layout/footer.html') %>
+</body>
+</html>

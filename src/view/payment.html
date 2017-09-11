@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title><%= htmlWebpackPlugin.options.title%></title>
+    </head>
+    <body>
+        <%= require('html-loader!./layout/nav.html')    %>
+        <%= require('html-loader!./layout/header.html') %>
+
+        <div class="crubline"></div>
+        <div class="payment-con">
+            <div class="w payment">
+                
+            </div>
+        </div>
+        
+        <%= require('html-loader!./layout/footer.html') %>
+    </body>
+</html>

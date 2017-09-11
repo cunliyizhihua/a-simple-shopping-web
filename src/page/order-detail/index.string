@@ -1,0 +1,52 @@
+<div class="user-info">
+    <p class="title">订单信息</p>
+    <p class="cel">订单号: {{orderNo}}</p>
+    <p class="cel">创建时间: {{createTime}}</p>
+    <p class="cel">收件人: {{receiverName}}</p>
+    <p class="cel">订单状态: {{statusDesc}}</p>
+    <div class="opera">
+        {{#needPay}}
+        <a class="pay" href="./payment.html?orderNumber={{orderNo}}">去支付</a>
+        {{/needPay}}
+        {{#isCancelable}}
+        <a class="del" id="order-del-btn">取消订单</a>
+        {{/isCancelable}}
+    </div>
+</div>
+<div class="pro-info">
+    <p class="title">商品信息</p>
+    <table class="header-con">
+        <thead>
+            <tr>
+                <th class="space cel"> </th>
+                <th class="prodcut">商品信息</th>
+                <th class="pirce cel">单价</th>
+                <th class="count cel">数量</th>
+                <th class="total cel">合计</th>
+            </tr>
+        </thead>
+    </table>
+    
+    <!-- 循环部分 -->
+    {{#orderItemVoList}}
+    <table class="body-con">
+        <tbody>
+            <tr>
+                <td class="pic cel">
+                    <a href="./detail.html?productId={{productId}}" target="_blank">
+                        <img src="{{imageHost}}{{productImage}}" alt="{{productName}}">
+                    </a>
+                </td>
+                <td class="title">{{productName}}</td>
+                <td class="price cel">{{currentUnitPrice}}</td>
+                <td class="count cel">{{quantity}}</td>
+                <td class="total cel">{{totalPrice}}</td>
+            </tr>
+        </tbody>
+    </table>
+    {{/orderItemVoList}}
+
+    <div class="footer-con">
+        <span>合计:{{payment}}</span>
+    </div>
+</div>

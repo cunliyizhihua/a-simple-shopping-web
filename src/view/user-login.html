@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title><%= htmlWebpackPlugin.options.title%></title>
+</head>
+<body>
+	<%= require('html-loader!./layout/nav-simple.html') %>
+	<div class="login-wrap">
+		<div class="w">
+			<form id="login-form">
+				<p class="title">账户登录</p>
+				<p class="error-tip">
+					<!-- 错误提示 -->
+				</p>
+				<div class="item">
+					<label for="username" class="item-icon">
+						<i class="fa fa-user-circle" aria-hidden="true"></i>
+					</label>
+					<input id="username" type="text" name="username" class="item-content">		
+				</div>
+				<div class="item">
+					<label for="password"  class="item-icon">
+						<i class="fa fa-lock" aria-hidden="true"></i>
+					</label>
+					<input id="password" type="password" name="password" class="item-content">
+					<p class="error-content"></p>
+				</div>
+				<div class="submit">
+					<input type="button" class="submit-button link" value="登   录">
+				</div>
+				<div class="to-log-reg">
+					<a href="./user-register.html" class="link to-log">去注册</a>
+					<a href="./user-pass-reset.html" class="link to-reg">忘记密码</a>
+				</div>
+			</form>
+		</div>
+		<div class="login-banner">
+			<div class="w">
+				<div class="tu"></div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- 引入footer -->
+	<%= require('html-loader!./layout/footer.html') %>
+</body>
+</html>
